@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import styled from 'styled-components';
+
+const Div = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d052c;
+  color: #ffffff;
+  font-size: 8vh;
+  height: 100vh;
+  width: 100vw;
+`;
+
+const Div2 = styled.div`
+  display: inline-block;
+  text-align: center;
+  transform: translate(0, -60px);
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Div>
+        <Div2>
+          <h2>House Exchange</h2>
+          <div>Coming soon</div>
+        </Div2>
+      </Div>
+      
+    </>
   );
 }
 
